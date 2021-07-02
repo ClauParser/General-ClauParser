@@ -3,6 +3,7 @@
       uint8_t type;
       size_t length;
       int64_t str_start;
+      ...
     };
 
     Utility::GetType(token)
