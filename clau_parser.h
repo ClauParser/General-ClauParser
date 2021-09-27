@@ -674,7 +674,7 @@ namespace clau_parser {
 
 			{
 				fseek(inFile, 0, SEEK_END);
-				size_t length = ftell(inFile);
+				long long length = ftell(inFile);
 				fseek(inFile, 0, SEEK_SET);
 
 				Utility::BomType x = Utility::ReadBom(inFile);
